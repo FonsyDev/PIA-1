@@ -18,7 +18,7 @@ duration: 45min
   <h1 class="text-4xl font-bold mb-3">Ecosistema de la IA y Primeros Pasos con Python</h1>
   
   <!-- Frase descriptiva de la unidad (ligeramente más pequeña que el título) -->
-  <p class="text-xl font-medium max-w-2xl mx-auto mb-6">
+  <p class="text-xl font-medium max-w-2xl mx-auto mb-6 px-4 py-3 rounded-xl text-white opacity-90 transition-all duration-300 hover:opacity-100 hover:bg-black hover:scale-105 hover:shadow-2xl">
     Fundamentos avanzados, entornos de desarrollo y control de la sintaxis básica para iniciar proyectos inteligentes
   </p>
   
