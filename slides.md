@@ -51,17 +51,15 @@ The last comment block of each slide will be treated as slide notes. It will be 
 transition: fade-out
 ---
 
-# What is Slidev?
+# Ecosistema de la IA y Primeros Pasos con Python
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+- 📝 **Análisis de lenguajes de programación adecuados para IA (Python, R, JavaScript) y factores de rendimiento**
+- 🎨 **Caracterización de lenguajes de marcado (JSON, XML) y su estructura para el intercambio de datos**
+- 🧑‍💻 **Configuración de entornos de desarrollo y gestión de entornos virtuales (Conda, Pip, Jupyter Notebooks)**
+- 🤹 **Sintaxis básica de Python orientada a IA (estructuras de datos, funciones y control de flujo)**
+- 🎥 **Desarrollo de los primeros scripts de código para automatización de tareas y procesamiento lógico básico**
 <br>
 <br>
 
