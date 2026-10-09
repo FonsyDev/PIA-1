@@ -49,21 +49,46 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 transition: fade-out
+# Segunda diapositiva: Contenidos y objetivos
 ---
 
 # Ecosistema de la IA y Primeros Pasos con Python
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+<div class="relative grid grid-cols-2 gap-30 mt-8">
+  
+  <!-- SVG Overlay: Aparece de forma suave en el primer clic -->
+  <svg v-click="1" class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 960 400">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981" />
+      </marker>
+    </defs>
+    <line x1="400" y1="55" x2="540" y2="200" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="400" y1="140" x2="540" y2="215" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="400" y1="230" x2="540" y2="230" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="400" y1="320" x2="540" y2="245" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="400" y1="405" x2="540" y2="260" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)" />
+  </svg>
 
-- 📝 **Análisis de lenguajes de programación adecuados para IA (Python, R, JavaScript) y factores de rendimiento**
-- 🎨 **Caracterización de lenguajes de marcado (JSON, XML) y su estructura para el intercambio de datos**
-- 🧑‍💻 **Configuración de entornos de desarrollo y gestión de entornos virtuales (Conda, Pip, Jupyter Notebooks)**
-- 🤹 **Sintaxis básica de Python orientada a IA (estructuras de datos, funciones y control de flujo)**
-- 🎥 **Desarrollo de los primeros scripts de código para automatización de tareas y procesamiento lógico básico**
-<br>
-<br>
+  <!-- Columna 1: Contenidos de la Unidad -->
+  <div>
+    <h3 class="text-2xl font-bold mb-4 text-emerald-500">Contenidos de la Unidad</h3>
+    <ul class="space-y-4 text-black font-medium">
+      <li>Análisis de lenguajes de programación para IA y factores de rendimiento</li>
+      <li>Caracterización de lenguajes de marcado y su estructura para el intercambio de datos</li>
+      <li>Configuración de entornos de desarrollo y gestión de entornos virtuales</li>
+      <li>Sintaxis básica de Python orientada a Inteligencia Artificial</li>
+      <li>Scripts de código para automatización de tareas y procesamiento lógico básico</li>
+    </ul>
+  </div>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+  <!-- Columna 2: Objetivo de la Unidad (Aparece suavemente en el primer clic) -->
+  <div v-click="1" class="flex flex-col justify-center pt-12">
+    <p class="text-black font-medium leading-relaxed bg-emerald-100/60 p-6 rounded-xl border border-emerald-300/40 shadow-md">
+      Comprender los cimientos teóricos y prácticos necesarios para configurar, mantener y desplegar proyectos tecnológicos robustos, asegurando la sincronización fluida entre distintos entornos de desarrollo y garantizando un flujo de trabajo profesional.
+    </p>
+  </div>
+</div>
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -80,11 +105,12 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-</style>
 
-<!--
-Here is another comment.
--->
+/* Transición suave y gradual para los elementos con v-click */
+.slidev-vclick-target {
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+</style>
 
 ---
 transition: slide-up
@@ -94,6 +120,8 @@ level: 2
 # Navigation
 
 Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+
+Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 ## Keyboard Shortcuts
 
