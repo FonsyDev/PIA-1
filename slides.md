@@ -19,13 +19,13 @@ duration: 45min
   
   <!-- Frase descriptiva de la unidad (ligeramente más pequeña que el título) -->
   <p class="text-xl font-medium max-w-2xl mx-auto mb-6 px-4 py-3 rounded-xl text-white opacity-90 transition-all duration-300 hover:opacity-100 hover:bg-black hover:scale-105 hover:shadow-2xl">
-    Fundamentos avanzados, entornos de desarrollo y control de la sintaxis básica para iniciar proyectos inteligentes
+    Configuración del entorno de trabajo y desarrollo de las primeras líneas de código para dar forma a la Inteligencia Artificial
   </p>
   
   <!-- Pregunta con borde completo en los cuatro lados -->
   <div @click="$slidev.nav.next" class="bg-black/35 backdrop-blur-sm border-2 border-emerald-500 py-4 px-6 rounded-lg max-w-2xl mx-auto my-4 text-center shadow-lg cursor-pointer">
     <p class="text-base text-white font-medium m-0">
-      ¿Cómo se pasa de la teoría matemática de la Inteligencia Artificial a escribir nuestro primer código funcional en Python desde cero?
+      ¿Qué herramientas, lenguajes y estructuras debemos dominar para dar nuestros primeros pasos con garantías en el campo de la Inteligencia Artificial?
     </p>
   </div>
 </div>
@@ -73,19 +73,19 @@ transition: fade-out
   <!-- Columna 1: Contenidos de la Unidad -->
   <div>
     <h3 class="text-2xl font-bold mb-4 text-emerald-500">Contenidos de la Unidad</h3>
-    <ul class="space-y-4 text-black font-medium">
-      <li>Análisis de lenguajes de programación para IA y factores de rendimiento</li>
-      <li>Caracterización de lenguajes de marcado y su estructura para el intercambio de datos</li>
-      <li>Configuración de entornos de desarrollo y gestión de entornos virtuales</li>
-      <li>Sintaxis básica de Python orientada a Inteligencia Artificial</li>
-      <li>Scripts de código para automatización de tareas y procesamiento lógico básico</li>
-    </ul>
+    <ol class="space-y-4 text-black font-medium">
+      <li><Link to="3" class="border-none">Análisis de lenguajes de programación para IA y factores de rendimiento</Link></li>
+      <li><Link to="5" class="border-none">Caracterización de lenguajes de marcado y su estructura para el intercambio de datos</Link></li>
+      <li><Link to="6" class="border-none">Configuración de entornos de desarrollo y gestión de entornos virtuales</Link></li>
+      <li><Link to="7" class="border-none">Sintaxis básica de Python orientada a Inteligencia Artificial</Link></li>
+      <li><Link to="8" class="border-none">Scripts de código para automatización de tareas y procesamiento lógico básico</Link></li>
+    </ol>
   </div>
 
   <!-- Columna 2: Objetivo de la Unidad (Aparece suavemente en el primer clic) -->
   <div v-click="1" class="flex flex-col justify-center pt-12">
-    <p class="text-black font-medium leading-relaxed bg-emerald-100/60 p-6 rounded-xl border border-emerald-300/40 shadow-md">
-      Comprender los cimientos teóricos y prácticos necesarios para configurar, mantener y desplegar proyectos tecnológicos robustos, asegurando la sincronización fluida entre distintos entornos de desarrollo y garantizando un flujo de trabajo profesional.
+    <p class="text-black font-medium leading-relaxed bg-emerald-100/60 p-6 rounded-xl border border-emerald-300/40 shadow-md" style="text-align: center">
+      Dominar las bases teóricas y prácticas para configurar entornos de desarrollo, estructurar datos y desplegar los primeros scripts funcionales en proyectos de Inteligencia Artificial
     </p>
   </div>
 </div>
@@ -110,6 +110,12 @@ h1 {
 .slidev-vclick-target {
   transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+a, .slidev-link {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
 </style>
 
 ---
@@ -117,7 +123,7 @@ transition: slide-up
 level: 2
 ---
 
-# Navigation
+# Lenguajes de Programación y Rendimiento en IA
 
 Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
 
@@ -160,6 +166,21 @@ The title will be inferred from your slide content, or you can override it with 
 
 <Toc text-sm minDepth="1" maxDepth="2" />
 
+---
+
+# Lenguajes de Marcado e Intercambio de Datos
+
+---
+
+# Entornos de Desarrollo y Entornos Virtuales en IA
+
+---
+
+# Sintaxis Básica de Python para Inteligencia Artificial
+
+---
+
+# Automatización y Primeros Scripts en Python
 ---
 layout: image-right
 image: https://cover.sli.dev
